@@ -4,6 +4,45 @@ import { Button } from '../ui/Button';
 import { ShieldCheck, Award, Smile, Check } from 'lucide-react';
 import heroImg from '../../assets/IMG-20260531-WA0095 (1).jpg';
 
+const ActionArea = () => (
+  <div className="flex flex-col items-center lg:items-start w-full">
+    <div className="flex flex-col sm:flex-row items-center gap-4 mb-10 w-full sm:w-auto">
+      <Link to="/contact" className="w-full sm:w-auto">
+        <Button variant="accent" size="md" className="shadow-lg shadow-accent/20 w-full sm:w-auto">
+          Book Appointment
+        </Button>
+      </Link>
+      <Link to="/services/general" className="w-full sm:w-auto">
+        <Button variant="outline" size="md" className="bg-white w-full sm:w-auto">
+          Our Services →
+        </Button>
+      </Link>
+    </div>
+
+    {/* Trust Bar */}
+    <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4 sm:gap-8 text-sm font-medium text-dark bg-white/50 backdrop-blur-sm p-4 rounded-xl border border-white inline-flex w-full sm:w-auto">
+      <div className="flex items-center gap-2 w-full sm:w-auto">
+        <div className="w-5 h-5 rounded-full bg-secondary/20 flex items-center justify-center text-secondary shrink-0">
+          <Check className="w-3 h-3" strokeWidth={3} />
+        </div>
+        20+ Years Experience
+      </div>
+      <div className="flex items-center gap-2 w-full sm:w-auto">
+        <div className="w-5 h-5 rounded-full bg-secondary/20 flex items-center justify-center text-secondary shrink-0">
+          <Check className="w-3 h-3" strokeWidth={3} />
+        </div>
+        Pediatric Specialist
+      </div>
+      <div className="flex items-center gap-2 w-full sm:w-auto">
+        <div className="w-5 h-5 rounded-full bg-secondary/20 flex items-center justify-center text-secondary shrink-0">
+          <Check className="w-3 h-3" strokeWidth={3} />
+        </div>
+        Sedation Available
+      </div>
+    </div>
+  </div>
+);
+
 export const HeroSection = () => {
   return (
     <section className="relative min-h-screen pt-24 lg:pt-32 pb-16 overflow-hidden bg-white flex flex-col justify-between">
@@ -33,39 +72,8 @@ export const HeroSection = () => {
                 Comprehensive dental treatment for children and families delivered with clinical excellence since 2007.
               </p>
 
-              <div className="flex flex-col sm:flex-row items-center gap-4 mb-10">
-                <Link to="/contact">
-                  <Button variant="accent" size="md" className="shadow-lg shadow-accent/20">
-                    Book Appointment
-                  </Button>
-                </Link>
-                <Link to="/services/general">
-                  <Button variant="outline" size="md" className="bg-white">
-                    Our Services →
-                  </Button>
-                </Link>
-              </div>
-
-              {/* Trust Bar */}
-              <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4 sm:gap-8 text-sm font-medium text-dark bg-white/50 backdrop-blur-sm p-4 rounded-xl border border-white inline-flex">
-                <div className="flex items-center gap-2">
-                  <div className="w-5 h-5 rounded-full bg-secondary/20 flex items-center justify-center text-secondary">
-                    <Check className="w-3 h-3" strokeWidth={3} />
-                  </div>
-                  20+ Years Experience
-                </div>
-                <div className="flex items-center gap-2">
-                  <div className="w-5 h-5 rounded-full bg-secondary/20 flex items-center justify-center text-secondary">
-                    <Check className="w-3 h-3" strokeWidth={3} />
-                  </div>
-                  Pediatric Specialist
-                </div>
-                <div className="flex items-center gap-2">
-                  <div className="w-5 h-5 rounded-full bg-secondary/20 flex items-center justify-center text-secondary">
-                    <Check className="w-3 h-3" strokeWidth={3} />
-                  </div>
-                  Sedation Available
-                </div>
+              <div className="hidden lg:block">
+                <ActionArea />
               </div>
             </motion.div>
           </div>
@@ -127,6 +135,11 @@ export const HeroSection = () => {
               </div>
 
             </div>
+          </div>
+
+          {/* Mobile Action Area (Below Image) */}
+          <div className="w-full lg:hidden mt-4 flex flex-col items-center">
+            <ActionArea />
           </div>
 
         </div>
