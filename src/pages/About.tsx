@@ -36,9 +36,9 @@ export const About = () => {
               <Award className="w-5 h-5 text-gold drop-shadow-md" />
               <span className="text-sm font-bold text-white tracking-widest uppercase drop-shadow-md">Chief Consultant & Founder</span>
             </div>
-            <h1 className="text-5xl md:text-6xl lg:text-7xl font-display font-black text-white mb-6 leading-[1.1] drop-shadow-lg">
+            <h1 className="text-[7.5vw] sm:text-5xl md:text-6xl lg:text-7xl font-display font-black text-white mb-6 leading-[1.1] drop-shadow-lg">
               <span className="block">Prof.</span>
-              <span className="block md:whitespace-nowrap">Dr. M. Gawthaman, M.D.S.</span>
+              <span className="block whitespace-nowrap">Dr. M. Gawthaman, M.D.S.</span>
             </h1>
             <p className="text-xl md:text-2xl font-medium text-white/90 drop-shadow-md">
               {doctorProfile.titles}
