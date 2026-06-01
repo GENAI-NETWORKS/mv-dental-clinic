@@ -22,7 +22,7 @@ export const ContactSection = () => {
   });
 
   const onSubmit = (data: FormData) => {
-    const phoneNumber = '919789144560';
+    const phoneNumber = '918870185063';
     const text = `*New Appointment Request*
 *Name:* ${data.name}
 *Phone:* ${data.phone}
@@ -72,7 +72,7 @@ export const ContactSection = () => {
                 <Phone className="w-6 h-6 text-white shrink-0" />
                 <div>
                   <div className="font-bold mb-1">Phone</div>
-                  <p className="text-white/80 text-sm">0427 3551 686 <br /> +91 97891 44560</p>
+                  <p className="text-white/80 text-sm">88701 85063</p>
                 </div>
               </div>
 
@@ -91,13 +91,13 @@ export const ContactSection = () => {
                 <h5 className="font-bold text-white">Working Hours</h5>
               </div>
               <ul className="space-y-2 text-sm text-white/80">
-                <li className="flex justify-between">
+                <li className="flex justify-between items-start">
                   <span>Mon - Sat</span>
-                  <span>9:00 AM - 7:00 PM</span>
+                  <span className="text-right">10:00 AM - 2:00 PM<br/>4:30 PM - 8:30 PM</span>
                 </li>
-                <li className="flex justify-between text-secondary font-medium">
+                <li className="flex justify-between text-red-400 font-medium">
                   <span>Sunday</span>
-                  <span>By Appointment</span>
+                  <span>Closed</span>
                 </li>
               </ul>
             </div>

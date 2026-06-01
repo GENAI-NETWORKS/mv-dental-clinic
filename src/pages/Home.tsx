@@ -20,7 +20,7 @@ export const Home = () => {
     "image": "https://mvdentalclinic.com/logo.png",
     "@id": "",
     "url": "https://mvdentalclinic.com",
-    "telephone": "+919789144560",
+    "telephone": "+918870185063",
     "address": {
       "@type": "PostalAddress",
       "streetAddress": "32, Vidhyalaya Road, Opp. TRS Mandapam, Srirangapalayam East",
@@ -44,7 +44,7 @@ export const Home = () => {
         "Saturday"
       ],
       "opens": "10:00",
-      "closes": "21:00"
+      "closes": "20:30"
     }
   };
 

@@ -68,7 +68,7 @@ export const AboutSection = () => {
                 Excellence in Dental Care
               </h3>
               
-              <p className="text-muted text-lg leading-relaxed mb-8">
+              <p className="text-muted text-lg leading-relaxed mb-8 text-justify">
                 Founded by Prof. Dr. M. Gawthaman, MV Dental Clinic and Vaisha Children's Dental Center have been delivering precision-driven, compassionate dental care for over two decades. We specialize in both comprehensive family dentistry and dedicated pediatric care, ensuring every visit is stress-free and effective.
               </p>
 

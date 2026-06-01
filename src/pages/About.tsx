@@ -95,10 +95,10 @@ export const About = () => {
               <blockquote className="border-l-8 border-primary bg-white shadow-sm p-6 md:p-8 rounded-2xl italic text-xl text-dark mb-8 font-medium">
                 "Academician and clinician par excellence with expertise in Pediatric Dentistry for over two decades."
               </blockquote>
-              <p className="text-muted leading-relaxed">
+              <p className="text-muted leading-relaxed text-justify">
                 As the founder of MV Dental Clinic and Vaisha Children's Dental Center, Dr. Gawthaman brings a wealth of experience from both academia and clinical practice. His dedication to pediatric dentistry ensures that every child receives the highest standard of care in a comfortable, anxiety-free environment.
               </p>
-              <p className="text-muted leading-relaxed mt-4">
+              <p className="text-muted leading-relaxed mt-4 text-justify">
                 He is highly sought after for his specialized skills in conscious sedation and interceptive orthodontics, bridging the gap between advanced dental science and compassionate patient care.
               </p>
             </motion.div>
@@ -191,7 +191,7 @@ export const About = () => {
                       </div>
                       <div>
                         <h4 className="text-2xl font-bold text-dark mb-3 group-hover:text-primary transition-colors duration-300">IDA & ISPPD Leadership</h4>
-                        <p className="text-muted text-lg leading-relaxed">
+                        <p className="text-muted text-lg leading-relaxed text-justify">
                           Life Member and active contributor to the Indian Dental Association and Indian Society of Pedodontics and Preventive Dentistry.
                         </p>
                       </div>
@@ -206,7 +206,7 @@ export const About = () => {
                       </div>
                       <div>
                         <h4 className="text-2xl font-bold text-dark mb-3 group-hover:text-secondary transition-colors duration-300">Conference Organizer</h4>
-                        <p className="text-muted text-lg leading-relaxed">
+                        <p className="text-muted text-lg leading-relaxed text-justify">
                           Spearheaded and led multiple National and State Level dental symposiums, fostering continuous education and academic growth among peers.
                         </p>
                       </div>
@@ -221,7 +221,7 @@ export const About = () => {
                       </div>
                       <div>
                         <h4 className="text-2xl font-bold text-dark mb-3 group-hover:text-gold transition-colors duration-300">Academic Speaker</h4>
-                        <p className="text-muted text-lg leading-relaxed">
+                        <p className="text-muted text-lg leading-relaxed text-justify">
                           Prolific paper presenter and highly esteemed guest lecturer at major academic forums and dental colleges across the country.
                         </p>
                       </div>
@@ -236,7 +236,7 @@ export const About = () => {
                       </div>
                       <div>
                         <h4 className="text-2xl font-bold text-dark mb-3">Community Care Initiatives</h4>
-                        <p className="text-muted text-lg leading-relaxed">
+                        <p className="text-muted text-lg leading-relaxed text-justify">
                           Dedicated to bridging healthcare access by conducting regular school dental camps and free community awareness programs.
                         </p>
                       </div>

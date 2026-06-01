@@ -7,7 +7,7 @@ export const FloatingActionMenu = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   // WhatsApp Config (for Mobile view)
-  const phoneNumber = '919789144560';
+  const phoneNumber = '918870185063';
   const message = 'Hello! I would like to book an appointment.';
   const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
 
@@ -27,7 +27,7 @@ export const FloatingActionMenu = () => {
     {
       icon: <Phone className="w-5 h-5 text-primary" />,
       label: 'Call Us',
-      href: 'tel:04273551686',
+      href: 'tel:8870185063',
       isRouterLink: false,
     },
   ];
@@ -54,7 +54,7 @@ export const FloatingActionMenu = () => {
             <span className="text-[11px] sm:text-xs font-bold">Location</span>
           </a>
           <a 
-            href="tel:04273551686" 
+            href="tel:8870185063" 
             className="flex-1 bg-primary text-white py-2.5 px-2 rounded-xl flex items-center justify-center gap-1.5 active:scale-95 transition-transform"
           >
             <Phone className="w-4 h-4 shrink-0" />
