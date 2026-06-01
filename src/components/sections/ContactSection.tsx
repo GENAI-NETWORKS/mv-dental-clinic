@@ -30,7 +30,7 @@ export const ContactSection = () => {
 *Service:* ${data.service}
 *Date:* ${data.date}
 *Message:* ${data.message || 'N/A'}`;
-    
+
     const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(text)}`;
     window.open(whatsappUrl, '_blank');
   };
@@ -38,7 +38,7 @@ export const ContactSection = () => {
   return (
     <section className="py-24 bg-surface relative overflow-hidden" id="contact">
       <div className="absolute top-0 right-0 w-1/3 h-full bg-primary/5 rounded-l-full -z-10 transform translate-x-1/2"></div>
-      
+
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-3xl mx-auto mb-16">
           <h2 className="text-sm font-bold text-primary uppercase tracking-widest mb-3">Get In Touch</h2>
@@ -48,13 +48,13 @@ export const ContactSection = () => {
         </div>
 
         <div className="flex flex-col lg:flex-row gap-12 bg-white rounded-3xl shadow-xl overflow-hidden border border-gray-100">
-          
+
           {/* Left: Contact Info */}
           <div className="w-full lg:w-5/12 bg-dark text-white p-10 md:p-12 relative overflow-hidden">
             <div className="absolute top-0 right-0 w-64 h-64 bg-primary rounded-full filter blur-[100px] opacity-30 -z-10"></div>
-            
+
             <h4 className="text-2xl font-display font-bold mb-8 text-white">Contact Information</h4>
-            
+
             <div className="space-y-6 mb-12">
               <div className="flex items-start gap-4">
                 <MapPin className="w-6 h-6 text-white shrink-0 mt-1" />
@@ -66,12 +66,12 @@ export const ContactSection = () => {
                   </p>
                 </div>
               </div>
-              
+
               <div className="flex items-center gap-4">
                 <Phone className="w-6 h-6 text-white shrink-0" />
                 <div>
                   <div className="font-bold mb-1">Phone</div>
-                  <p className="text-white/80 text-sm">0427 3551 686 <br/> +91 97891 44560</p>
+                  <p className="text-white/80 text-sm">0427 3551 686 <br /> +91 97891 44560</p>
                 </div>
               </div>
 
@@ -147,7 +147,7 @@ export const ContactSection = () => {
               </Button>
             </form>
           </div>
-          
+
         </div>
       </div>
     </section>

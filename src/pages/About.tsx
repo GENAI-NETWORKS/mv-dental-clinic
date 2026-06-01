@@ -75,7 +75,7 @@ export const About = () => {
               </div>
               
               {/* Decorative Background Blob */}
-              <div className="absolute top-1/2 -right-8 w-32 h-32 bg-primary/20 rounded-full blur-2xl -z-10"></div>
+              <div className="absolute top-1/2 right-0 lg:-right-8 w-32 h-32 bg-primary/20 rounded-full blur-2xl -z-10"></div>
             </motion.div>
           </div>
 

@@ -8,23 +8,10 @@ import { AboutSection } from '../components/sections/AboutSection';
 import { ServicesSection } from '../components/sections/ServicesSection';
 import { WhyChooseUs } from '../components/sections/WhyChooseUs';
 import { GallerySection } from '../components/sections/GallerySection';
+import { ReviewsSection } from '../components/sections/ReviewsSection';
 
 export const Home = () => {
   const location = useLocation();
-
-  useEffect(() => {
-    if (location.hash) {
-      const id = location.hash.replace('#', '');
-      const element = document.getElementById(id);
-      if (element) {
-        setTimeout(() => {
-          element.scrollIntoView({ behavior: 'smooth' });
-        }, 100);
-      }
-    } else {
-      window.scrollTo(0, 0);
-    }
-  }, [location]);
 
   const jsonLd = {
     "@context": "https://schema.org",
@@ -79,6 +66,7 @@ export const Home = () => {
       <ServicesSection />
       <GallerySection />
       <WhyChooseUs />
+      <ReviewsSection />
     </>
   );
 };

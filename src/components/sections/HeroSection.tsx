@@ -12,7 +12,7 @@ const ActionArea = () => (
           Book Appointment
         </Button>
       </Link>
-      <Link to="/services/general">
+      <Link to="/#services">
         <Button variant="outline" size="md" className="bg-white">
           Our Services →
         </Button>
