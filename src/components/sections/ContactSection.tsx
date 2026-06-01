@@ -47,9 +47,9 @@ export const ContactSection = () => {
           </h3>
         </div>
 
-        <div className="flex flex-col lg:flex-row gap-12 bg-white rounded-3xl shadow-xl overflow-hidden border border-gray-100">
+        <div className="flex flex-col-reverse lg:flex-row-reverse gap-12 bg-white rounded-3xl shadow-xl overflow-hidden border border-gray-100">
 
-          {/* Left: Contact Info */}
+          {/* Right (Visual): Contact Info */}
           <div className="w-full lg:w-5/12 bg-dark text-white p-10 md:p-12 relative overflow-hidden">
             <div className="absolute top-0 right-0 w-64 h-64 bg-primary rounded-full filter blur-[100px] opacity-30 -z-10"></div>
 
@@ -61,8 +61,9 @@ export const ContactSection = () => {
                 <div>
                   <div className="font-bold mb-1">Address</div>
                   <p className="text-white/80 leading-relaxed text-sm">
-                    32, Vidhyalaya Road, Opp. TRS Mandapam,<br />
-                    Srirangapalayam East, Salem – 636 007
+                    Mv Dental Clinic, 32, Vidhyalaya Road,<br />
+                    Seerangapalayam E St, opp. TRS Kalyana Mandapam,<br />
+                    Salem, Tamil Nadu 636007
                   </p>
                 </div>
               </div>

@@ -2,7 +2,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { Navbar } from './components/layout/Navbar';
 import { Footer } from './components/layout/Footer';
 import ScrollToTop from './components/ScrollToTop';
-import { WhatsAppButton } from './components/ui/WhatsAppButton';
+import { FloatingActionMenu } from './components/ui/FloatingActionMenu';
 
 import { Home } from './pages/Home';
 import { About } from './pages/About';
@@ -18,7 +18,7 @@ function App() {
     <HelmetProvider>
       <Router>
         <ScrollToTop />
-        <div className="flex flex-col min-h-screen">
+        <div className="flex flex-col min-h-screen pb-16 lg:pb-0">
           <Navbar />
           <main className="flex-grow">
             <Routes>
@@ -31,7 +31,7 @@ function App() {
             </Routes>
           </main>
           <Footer />
-          <WhatsAppButton />
+          <FloatingActionMenu />
         </div>
       </Router>
     </HelmetProvider>

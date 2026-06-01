@@ -52,10 +52,10 @@ export const Footer = () => {
           <div className="lg:col-span-3">
             <h4 className="text-white font-display font-black text-lg mb-6 tracking-wide">Services</h4>
             <ul className="space-y-4 text-sm font-medium">
-              <li><Link to="/services/pediatric" className="text-gray-400 hover:text-white flex items-center group transition-colors"><ChevronRight className="w-4 h-4 mr-2 text-secondary opacity-0 -ml-6 group-hover:opacity-100 group-hover:ml-0 transition-all duration-300" />Pediatric Dentistry</Link></li>
-              <li><Link to="/services/pediatric" className="text-gray-400 hover:text-white flex items-center group transition-colors"><ChevronRight className="w-4 h-4 mr-2 text-secondary opacity-0 -ml-6 group-hover:opacity-100 group-hover:ml-0 transition-all duration-300" />Caries Restoration</Link></li>
-              <li><Link to="/services/pediatric" className="text-gray-400 hover:text-white flex items-center group transition-colors"><ChevronRight className="w-4 h-4 mr-2 text-secondary opacity-0 -ml-6 group-hover:opacity-100 group-hover:ml-0 transition-all duration-300" />Sedation Dentistry</Link></li>
-              <li><Link to="/services/general" className="text-gray-400 hover:text-white flex items-center group transition-colors"><ChevronRight className="w-4 h-4 mr-2 text-secondary opacity-0 -ml-6 group-hover:opacity-100 group-hover:ml-0 transition-all duration-300" />General Services</Link></li>
+              <li><Link to="/#services" className="text-gray-400 hover:text-white flex items-center group transition-colors"><ChevronRight className="w-4 h-4 mr-2 text-secondary opacity-0 -ml-6 group-hover:opacity-100 group-hover:ml-0 transition-all duration-300" />Pediatric Dentistry</Link></li>
+              <li><Link to="/#services" className="text-gray-400 hover:text-white flex items-center group transition-colors"><ChevronRight className="w-4 h-4 mr-2 text-secondary opacity-0 -ml-6 group-hover:opacity-100 group-hover:ml-0 transition-all duration-300" />Caries Restoration</Link></li>
+              <li><Link to="/#services" className="text-gray-400 hover:text-white flex items-center group transition-colors"><ChevronRight className="w-4 h-4 mr-2 text-secondary opacity-0 -ml-6 group-hover:opacity-100 group-hover:ml-0 transition-all duration-300" />Sedation Dentistry</Link></li>
+              <li><Link to="/#services" className="text-gray-400 hover:text-white flex items-center group transition-colors"><ChevronRight className="w-4 h-4 mr-2 text-secondary opacity-0 -ml-6 group-hover:opacity-100 group-hover:ml-0 transition-all duration-300" />General Services</Link></li>
             </ul>
           </div>
 
@@ -67,7 +67,9 @@ export const Footer = () => {
                 <div className="w-10 h-10 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center shrink-0">
                   <MapPin className="w-5 h-5 text-primary" />
                 </div>
-                <span className="text-gray-300 leading-relaxed mt-0.5">32, Vidhyalaya Road, Opp. TRS Mandapam, Salem - 636 007</span>
+                <span className="text-gray-300 leading-relaxed mt-0.5">
+                  Mv Dental Clinic, 32, Vidhyalaya Road, Seerangapalayam E St, opp. TRS Kalyana Mandapam, Salem, Tamil Nadu 636007
+                </span>
               </li>
               <li className="flex items-center gap-4">
                 <div className="w-10 h-10 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center shrink-0">

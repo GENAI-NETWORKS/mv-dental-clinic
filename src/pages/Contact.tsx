@@ -42,7 +42,7 @@ export const Contact = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 mt-12">
         <div className="bg-white p-4 rounded-3xl shadow-sm border border-gray-100 h-[400px]">
           <iframe
-            src="https://maps.google.com/maps?q=32,%20Vidhyalaya%20Road,%20Opp.%20TRS%20Mandapam,%20Salem%20-%20636%20007&t=&z=16&ie=UTF8&iwloc=&output=embed"
+            src="https://maps.google.com/maps?q=Mv%20Dental%20Clinic,%2032,%20Vidhyalaya%20Road,%20Seerangapalayam%20E%20St,%20opp.%20TRS%20Kalyana%20Mandapam,%20Seerangapalayam,%20Salem,%20Tamil%20Nadu%20636007&t=&z=16&ie=UTF8&iwloc=&output=embed"
             width="100%"
             height="100%"
             style={{ border: 0, borderRadius: '1rem' }}
