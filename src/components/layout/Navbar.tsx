@@ -44,8 +44,8 @@ export const Navbar = () => {
         <div className="flex items-center justify-between">
           {/* Logo */}
           <Link to="/" className="shrink-0 flex items-center gap-2 md:gap-3">
-            <img src={logo} alt="Mv Dental Clinic" className="h-8 md:h-12 w-auto object-contain" />
-            <span className="font-display font-black text-[15px] sm:text-xl text-dark tracking-tight leading-tight">Mv Dental Clinic</span>
+            <img src={logo} alt="Mv Dental Clinic" className="h-10 md:h-12 w-auto object-contain" />
+            <span className="font-display font-black text-lg sm:text-xl text-dark tracking-tight leading-tight">Mv Dental Clinic</span>
           </Link>
 
           {/* Right Side: Nav + CTA */}
@@ -111,10 +111,10 @@ export const Navbar = () => {
               animate={{ x: 0 }}
               exit={{ x: '100%' }}
               transition={{ duration: 0.3, type: 'tween' }}
-              className="fixed top-0 right-0 h-[100dvh] w-[65vw] max-w-[320px] bg-white z-[70] flex flex-col pt-24 px-6 overflow-y-auto pb-10 shadow-2xl md:hidden"
+              className="fixed top-0 right-0 h-[100dvh] w-1/2 max-w-[320px] bg-primary z-[70] flex flex-col pt-24 px-4 sm:px-6 overflow-y-auto pb-10 shadow-2xl md:hidden"
             >
               <button 
-                className="absolute top-5 right-5 p-2 text-dark hover:bg-gray-100 rounded-full transition-colors"
+                className="absolute top-5 right-5 p-2 text-white hover:bg-white/10 rounded-full transition-colors"
                 onClick={() => setMobileMenuOpen(false)}
               >
                 <X className="w-6 h-6" />
@@ -130,7 +130,7 @@ export const Navbar = () => {
                   <Link
                     key={link.name}
                     to={link.path}
-                    className={`px-3 py-2 text-base font-bold rounded-xl transition-all duration-300 ${isActive ? 'bg-primary text-white shadow-sm' : 'text-text hover:bg-gray-50 hover:text-primary'}`}
+                    className={`px-3 py-2 text-sm sm:text-base font-bold rounded-xl transition-all duration-300 ${isActive ? 'bg-white text-primary shadow-sm' : 'text-white/80 hover:bg-white/10 hover:text-white'}`}
                     onClick={() => setMobileMenuOpen(false)}
                   >
                     {link.name}
@@ -140,7 +140,7 @@ export const Navbar = () => {
             </nav>
             <div className="mt-6">
               <Link to="/contact" onClick={() => setMobileMenuOpen(false)}>
-                <Button variant="accent" size="sm" className="w-full shadow-md shadow-accent/20">
+                <Button variant="accent" size="sm" className="shadow-md shadow-accent/20 text-xs px-3 py-1.5 h-auto">
                   Book Appointment
                 </Button>
               </Link>
