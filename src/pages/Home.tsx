@@ -8,6 +8,7 @@ import { AboutSection } from '../components/sections/AboutSection';
 import { ServicesSection } from '../components/sections/ServicesSection';
 import { WhyChooseUs } from '../components/sections/WhyChooseUs';
 import { GallerySection } from '../components/sections/GallerySection';
+import { BeforeAfterSection } from '../components/sections/BeforeAfterSection';
 import { ReviewsSection } from '../components/sections/ReviewsSection';
 
 export const Home = () => {
@@ -64,6 +65,7 @@ export const Home = () => {
       <StatsSection />
       <AboutSection />
       <ServicesSection />
+      <BeforeAfterSection />
       <GallerySection />
       <WhyChooseUs />
       <ReviewsSection />

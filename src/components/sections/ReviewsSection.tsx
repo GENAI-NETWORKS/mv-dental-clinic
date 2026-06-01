@@ -77,9 +77,9 @@ const reviews = [
 
 export const ReviewsSection = () => {
   return (
-    <section className="py-20 bg-surface overflow-hidden border-t border-gray-100">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 mb-12">
-        <div className="flex flex-col items-center justify-center text-center max-w-3xl mx-auto">
+    <section className="py-12 md:py-16 bg-surface overflow-hidden border-t border-gray-100">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div className="flex flex-col items-center justify-center text-center max-w-3xl mx-auto mb-12">
           {/* Google Logo / Badge */}
           <div className="flex items-center gap-2 mb-4">
             <span className="text-xl font-bold">

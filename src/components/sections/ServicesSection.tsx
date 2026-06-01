@@ -9,7 +9,7 @@ export const ServicesSection = () => {
   const currentServices = activeTab === 'pediatric' ? pediatricServices : generalServices;
 
   return (
-    <section id="services" className="py-20 bg-surface scroll-mt-24">
+    <section id="services" className="py-12 md:py-16 bg-surface scroll-mt-24">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         
         <div className="text-center mb-12">
@@ -17,18 +17,18 @@ export const ServicesSection = () => {
           <h3 className="text-3xl md:text-4xl font-display font-black text-dark mb-8">Comprehensive Dental Care</h3>
           
           {/* Tabs */}
-          <div className="inline-flex bg-white p-1 rounded-xl shadow-sm border border-gray-100 flex-wrap justify-center gap-2 sm:gap-0">
+          <div className="inline-flex w-full sm:w-auto bg-white p-1 rounded-xl shadow-sm border border-gray-100 justify-between sm:justify-center">
             <button
               onClick={() => setActiveTab('pediatric')}
-              className={`flex items-center gap-2 px-6 py-3 rounded-lg font-bold transition-all duration-300 ${activeTab === 'pediatric' ? 'bg-secondary text-white shadow-md' : 'text-muted hover:text-dark'}`}
+              className={`flex-1 sm:flex-none flex items-center justify-center gap-1.5 sm:gap-2 px-2 sm:px-6 py-2.5 sm:py-3 rounded-lg text-xs sm:text-base font-bold transition-all duration-300 ${activeTab === 'pediatric' ? 'bg-secondary text-white shadow-md' : 'text-muted hover:text-dark'}`}
             >
-              <Smile className="w-5 h-5" /> Pediatric Dentistry
+              <Smile className="w-4 h-4 sm:w-5 sm:h-5 shrink-0" /> Pediatric
             </button>
             <button
               onClick={() => setActiveTab('general')}
-              className={`flex items-center gap-2 px-6 py-3 rounded-lg font-bold transition-all duration-300 ${activeTab === 'general' ? 'bg-primary text-white shadow-md' : 'text-muted hover:text-dark'}`}
+              className={`flex-1 sm:flex-none flex items-center justify-center gap-1.5 sm:gap-2 px-2 sm:px-6 py-2.5 sm:py-3 rounded-lg text-xs sm:text-base font-bold transition-all duration-300 ${activeTab === 'general' ? 'bg-primary text-white shadow-md' : 'text-muted hover:text-dark'}`}
             >
-              <Stethoscope className="w-5 h-5" /> General Dentistry
+              <Stethoscope className="w-4 h-4 sm:w-5 sm:h-5 shrink-0" /> General
             </button>
           </div>
         </div>
@@ -42,7 +42,7 @@ export const ServicesSection = () => {
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -20 }}
               transition={{ duration: 0.3 }}
-              className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
+              className="grid grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6"
             >
               {currentServices.map((service, index) => (
                 <motion.div
@@ -52,15 +52,15 @@ export const ServicesSection = () => {
                   transition={{ delay: index * 0.05, duration: 0.5 }}
                   className="group relative flex flex-col items-start p-2"
                 >
-                  <div className={`w-14 h-14 rounded-2xl flex items-center justify-center mb-6 transition-all duration-500 group-hover:scale-110 ${
+                  <div className={`w-10 h-10 sm:w-14 sm:h-14 rounded-xl sm:rounded-2xl flex items-center justify-center mb-3 sm:mb-6 transition-all duration-500 group-hover:scale-110 ${
                     activeTab === 'pediatric' 
                       ? 'bg-secondary/10 text-secondary' 
                       : 'bg-primary/10 text-primary'
                   }`}>
-                    <service.icon className="w-7 h-7" />
+                    <service.icon className="w-5 h-5 sm:w-7 sm:h-7" />
                   </div>
                   
-                  <h4 className="font-display font-bold text-dark text-xl mb-3">
+                  <h4 className="font-display font-bold text-dark text-sm sm:text-xl mb-2 sm:mb-3 leading-tight">
                     {service.title}
                   </h4>
                   

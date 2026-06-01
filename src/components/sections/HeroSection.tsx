@@ -9,30 +9,32 @@ const ActionArea = () => (
     <div className="flex flex-col sm:flex-row items-center gap-4 mb-10">
       <Link to="/#services">
         <Button variant="outline" size="md" className="bg-white">
-          Our Services →
+          Our Services
         </Button>
       </Link>
     </div>
 
-    {/* Trust Bar */}
-    <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4 sm:gap-8 text-sm font-medium text-dark bg-white/50 backdrop-blur-sm p-4 rounded-xl border border-white inline-flex w-full sm:w-auto">
-      <div className="flex items-center gap-2 w-full sm:w-auto">
-        <div className="w-5 h-5 rounded-full bg-secondary/20 flex items-center justify-center text-secondary shrink-0">
-          <Check className="w-3 h-3" strokeWidth={3} />
+    {/* Premium Trust Badges */}
+    <div className="flex flex-wrap items-center gap-3 w-full justify-center lg:justify-start">
+      <div className="flex items-center gap-2.5 px-4 py-2.5 bg-white rounded-full shadow-[0_4px_15px_rgba(0,0,0,0.05)] border border-gray-100 hover:-translate-y-1 transition-transform cursor-default">
+        <div className="w-7 h-7 rounded-full bg-primary/10 flex items-center justify-center text-primary shrink-0">
+          <Award className="w-4 h-4" />
         </div>
-        20+ Years Experience
+        <span className="text-sm font-bold text-dark tracking-wide">20+ Years Experience</span>
       </div>
-      <div className="flex items-center gap-2 w-full sm:w-auto">
-        <div className="w-5 h-5 rounded-full bg-secondary/20 flex items-center justify-center text-secondary shrink-0">
-          <Check className="w-3 h-3" strokeWidth={3} />
+      
+      <div className="flex items-center gap-2.5 px-4 py-2.5 bg-white rounded-full shadow-[0_4px_15px_rgba(0,0,0,0.05)] border border-gray-100 hover:-translate-y-1 transition-transform cursor-default">
+        <div className="w-7 h-7 rounded-full bg-secondary/10 flex items-center justify-center text-secondary shrink-0">
+          <Smile className="w-4 h-4" />
         </div>
-        Pediatric Specialist
+        <span className="text-sm font-bold text-dark tracking-wide">Pediatric Specialist</span>
       </div>
-      <div className="flex items-center gap-2 w-full sm:w-auto">
-        <div className="w-5 h-5 rounded-full bg-secondary/20 flex items-center justify-center text-secondary shrink-0">
-          <Check className="w-3 h-3" strokeWidth={3} />
+
+      <div className="flex items-center gap-2.5 px-4 py-2.5 bg-white rounded-full shadow-[0_4px_15px_rgba(0,0,0,0.05)] border border-gray-100 hover:-translate-y-1 transition-transform cursor-default">
+        <div className="w-7 h-7 rounded-full bg-accent/10 flex items-center justify-center text-accent shrink-0">
+          <ShieldCheck className="w-4 h-4" />
         </div>
-        Sedation Available
+        <span className="text-sm font-bold text-dark tracking-wide">Sedation Available</span>
       </div>
     </div>
   </div>
@@ -40,7 +42,7 @@ const ActionArea = () => (
 
 export const HeroSection = () => {
   return (
-    <section className="relative min-h-screen pt-24 lg:pt-32 pb-16 overflow-hidden bg-white flex flex-col justify-between">
+    <section className="relative min-h-screen pt-20 lg:pt-28 pb-8 overflow-hidden bg-white flex flex-col justify-between">
       {/* Plain Pure White Background */}
       <div className="absolute inset-0 z-0 bg-white pointer-events-none"></div>
 
@@ -161,7 +163,7 @@ export const HeroSection = () => {
               Salem
               <span className="mx-4 text-white/50">•</span>
               Since 2007
-              <span className="mx-4 text-white/50">→</span>
+              <span className="mx-4 text-white/50"></span>
             </div>
           ))}
         </motion.div>

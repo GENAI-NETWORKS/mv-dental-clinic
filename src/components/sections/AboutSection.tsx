@@ -7,7 +7,7 @@ import { Button } from '../ui/Button';
 
 export const AboutSection = () => {
   return (
-    <section id="about" className="py-24 relative overflow-hidden bg-surface scroll-mt-24">
+    <section id="about" className="py-12 md:py-16 relative overflow-hidden bg-surface scroll-mt-24">
       {/* Background Decor */}
       <div className="absolute top-1/2 left-1/4 w-96 h-96 bg-primary/20 rounded-full mix-blend-multiply filter blur-[100px] opacity-70 animate-float" />
       <div className="absolute top-1/4 right-1/4 w-[30rem] h-[30rem] bg-secondary/10 rounded-full mix-blend-multiply filter blur-[100px] opacity-70 animate-float" style={{ animationDelay: '2s' }} />
@@ -60,7 +60,6 @@ export const AboutSection = () => {
           >
             <div>
               <div className="flex items-center gap-4 mb-6">
-                <span className="w-10 h-1 bg-primary rounded-full"></span>
                 <h2 className="text-sm font-bold text-primary uppercase tracking-[0.2em]">About Our Clinic</h2>
               </div>
               
