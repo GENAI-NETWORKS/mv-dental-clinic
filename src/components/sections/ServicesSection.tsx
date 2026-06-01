@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import { Smile, Stethoscope } from 'lucide-react';
 import { pediatricServices } from '../../data/pediatricServices';
 import { generalServices } from '../../data/generalServices';
 
@@ -16,18 +17,18 @@ export const ServicesSection = () => {
           <h3 className="text-3xl md:text-4xl font-display font-black text-dark mb-8">Comprehensive Dental Care</h3>
           
           {/* Tabs */}
-          <div className="inline-flex bg-white p-1 rounded-xl shadow-sm border border-gray-100">
+          <div className="inline-flex bg-white p-1 rounded-xl shadow-sm border border-gray-100 flex-wrap justify-center gap-2 sm:gap-0">
             <button
               onClick={() => setActiveTab('pediatric')}
-              className={`px-6 py-3 rounded-lg font-bold transition-all duration-300 ${activeTab === 'pediatric' ? 'bg-secondary text-white shadow-md' : 'text-muted hover:text-dark'}`}
+              className={`flex items-center gap-2 px-6 py-3 rounded-lg font-bold transition-all duration-300 ${activeTab === 'pediatric' ? 'bg-secondary text-white shadow-md' : 'text-muted hover:text-dark'}`}
             >
-              🦷 Pediatric Dentistry
+              <Smile className="w-5 h-5" /> Pediatric Dentistry
             </button>
             <button
               onClick={() => setActiveTab('general')}
-              className={`px-6 py-3 rounded-lg font-bold transition-all duration-300 ${activeTab === 'general' ? 'bg-primary text-white shadow-md' : 'text-muted hover:text-dark'}`}
+              className={`flex items-center gap-2 px-6 py-3 rounded-lg font-bold transition-all duration-300 ${activeTab === 'general' ? 'bg-primary text-white shadow-md' : 'text-muted hover:text-dark'}`}
             >
-              🏥 General Dentistry
+              <Stethoscope className="w-5 h-5" /> General Dentistry
             </button>
           </div>
         </div>
