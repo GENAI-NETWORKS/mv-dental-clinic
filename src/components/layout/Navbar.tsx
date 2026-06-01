@@ -51,30 +51,32 @@ export const Navbar = () => {
           {/* Right Side: Nav + CTA */}
           <div className="flex items-center gap-8">
             {/* Desktop Nav */}
-            <nav className="hidden md:flex items-center space-x-8">
-              <NavLink to="/" className={({ isActive }) => `font-medium relative overflow-hidden group ${isActive && location.hash === '' ? 'text-primary' : 'text-text hover:text-primary'}`}>
+            <nav className="hidden md:flex items-center space-x-1 lg:space-x-2">
+              <NavLink to="/" className={({ isActive }) => `px-4 py-2 text-[15px] font-bold rounded-full transition-all duration-300 ${isActive && location.hash === '' ? 'bg-primary text-white shadow-md shadow-primary/20' : 'text-text hover:bg-gray-100/80 hover:text-primary'}`}>
                 Home
-                <span className="absolute bottom-0 left-0 w-full h-0.5 bg-primary transform origin-left transition-transform duration-300 scale-x-0 group-hover:scale-x-100" />
               </NavLink>
-              <Link to="/#about" className="font-medium relative overflow-hidden group text-text hover:text-primary">
+              <Link to="/#about" className={`px-4 py-2 text-[15px] font-bold rounded-full transition-all duration-300 ${location.hash === '#about' ? 'bg-primary text-white shadow-md shadow-primary/20' : 'text-text hover:bg-gray-100/80 hover:text-primary'}`}>
                 About
-                <span className="absolute bottom-0 left-0 w-full h-0.5 bg-primary transform origin-left transition-transform duration-300 scale-x-0 group-hover:scale-x-100" />
               </Link>
               
-              <Link to="/#services" className="font-medium relative overflow-hidden group text-text hover:text-primary">
+              <Link to="/#services" className={`px-4 py-2 text-[15px] font-bold rounded-full transition-all duration-300 ${location.hash === '#services' ? 'bg-primary text-white shadow-md shadow-primary/20' : 'text-text hover:bg-gray-100/80 hover:text-primary'}`}>
                 Services
-                <span className="absolute bottom-0 left-0 w-full h-0.5 bg-primary transform origin-left transition-transform duration-300 scale-x-0 group-hover:scale-x-100" />
               </Link>
 
-              <Link to="/#gallery" className="font-medium relative overflow-hidden group text-text hover:text-primary">
+              <Link to="/#gallery" className={`px-4 py-2 text-[15px] font-bold rounded-full transition-all duration-300 ${location.hash === '#gallery' ? 'bg-primary text-white shadow-md shadow-primary/20' : 'text-text hover:bg-gray-100/80 hover:text-primary'}`}>
                 Gallery
-                <span className="absolute bottom-0 left-0 w-full h-0.5 bg-primary transform origin-left transition-transform duration-300 scale-x-0 group-hover:scale-x-100" />
               </Link>
-              <NavLink to="/contact" className={({ isActive }) => `font-medium relative overflow-hidden group ${isActive ? 'text-primary' : 'text-text hover:text-primary'}`}>
+              <NavLink to="/contact" className={({ isActive }) => `px-4 py-2 text-[15px] font-bold rounded-full transition-all duration-300 ${isActive ? 'bg-primary text-white shadow-md shadow-primary/20' : 'text-text hover:bg-gray-100/80 hover:text-primary'}`}>
                 Contact
-                <span className="absolute bottom-0 left-0 w-full h-0.5 bg-primary transform origin-left transition-transform duration-300 scale-x-0 group-hover:scale-x-100" />
               </NavLink>
             </nav>
+
+            {/* Desktop Book Appointment CTA */}
+            <Link to="/contact" className="hidden md:block">
+              <Button variant="accent" size="sm" className="shadow-md shadow-accent/20 whitespace-nowrap">
+                Book Appointment
+              </Button>
+            </Link>
 
             {/* Mobile Toggle */}
             <div className="flex items-center space-x-4">
@@ -117,18 +119,32 @@ export const Navbar = () => {
               >
                 <X className="w-6 h-6" />
               </button>
-            <nav className="flex flex-col space-y-6">
-              {navLinks.map((link) => (
-                <Link
-                  key={link.name}
-                  to={link.path}
-                  className="text-2xl font-display font-bold text-dark hover:text-primary"
-                >
-                  {link.name}
-                </Link>
-              ))}
-              {/* Additional mobile menu items can be added here if needed */}
+            <nav className="flex flex-col space-y-1">
+              {navLinks.map((link) => {
+                const isActive = 
+                  (link.path === '/' && location.pathname === '/' && !location.hash) || 
+                  (link.path.includes('#') && location.hash === link.path.replace('/', '')) || 
+                  (!link.path.includes('#') && link.path !== '/' && location.pathname === link.path);
+                  
+                return (
+                  <Link
+                    key={link.name}
+                    to={link.path}
+                    className={`px-3 py-2 text-base font-bold rounded-xl transition-all duration-300 ${isActive ? 'bg-primary text-white shadow-sm' : 'text-text hover:bg-gray-50 hover:text-primary'}`}
+                    onClick={() => setMobileMenuOpen(false)}
+                  >
+                    {link.name}
+                  </Link>
+                );
+              })}
             </nav>
+            <div className="mt-6">
+              <Link to="/contact" onClick={() => setMobileMenuOpen(false)}>
+                <Button variant="accent" size="sm" className="w-full shadow-md shadow-accent/20">
+                  Book Appointment
+                </Button>
+              </Link>
+            </div>
             <div className="mt-auto pt-8 mb-8" />
           </motion.div>
           </>

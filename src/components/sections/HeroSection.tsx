@@ -7,11 +7,6 @@ import heroImg from '../../assets/IMG-20260531-WA0095 (1).jpg';
 const ActionArea = () => (
   <div className="flex flex-col items-center lg:items-start w-full">
     <div className="flex flex-col sm:flex-row items-center gap-4 mb-10">
-      <Link to="/contact">
-        <Button variant="accent" size="md" className="shadow-lg shadow-accent/20">
-          Book Appointment
-        </Button>
-      </Link>
       <Link to="/#services">
         <Button variant="outline" size="md" className="bg-white">
           Our Services →
