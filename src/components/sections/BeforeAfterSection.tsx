@@ -4,10 +4,12 @@ import afterImg1 from '../../assets/image copy.png';
 import beforeImg2 from '../../assets/image copy 2.png';
 import afterImg2 from '../../assets/image copy 3.png';
 import afterImg3 from '../../assets/image copy 5.png';
+import implantImg1 from '../../assets/MR.SRINIVASAN 39 YRS 02_page-0001.jpg';
+import implantImg2 from '../../assets/MR.SRINIVASAN 40Y M OPG IMAGE 2_page-0001.jpg';
 
 const cases = [
   {
-    title: "Anterior esthetic restoration",
+    title: "Case 1: Anterior esthetic restoration",
     description: "Witness the transformation. We utilize advanced esthetic techniques to restore both the function and natural beauty of your smile.",
     images: [
       { src: beforeImg1, text: "Pre treatment - anterior caries teeth", badge: "Before", color: "bg-red-500/90", delay: 0 },
@@ -15,11 +17,13 @@ const cases = [
     ]
   },
   {
-    title: "Extraction of anterior teeth",
+    title: "Case 2: Extraction of anterior teeth",
     description: "Careful and precise extraction procedures ensuring optimal care and minimal discomfort for our patients.",
     images: [
       { src: beforeImg2, text: "OPG - Before extraction of anterior teeth", badge: "Before", color: "bg-red-500/90", delay: 0 },
-      { src: afterImg2, text: "Just after extraction", badge: "After", color: "bg-blue-500/90", delay: 0.2 },
+      { src: afterImg2, text: "Just after extraction", badge: "Before", color: "bg-red-500/90", delay: 0.1 },
+      { src: implantImg1, text: "After placement of implants", badge: "Implants", color: "bg-blue-500/90", delay: 0.2 },
+      { src: implantImg2, text: "After final fixed Prosthesis", badge: "Prosthesis", color: "bg-blue-500/90", delay: 0.3 },
       { src: afterImg3, text: "Post treatment anterior teeth", badge: "Post Treatment", color: "bg-green-500/90", delay: 0.4 },
     ]
   }
@@ -47,8 +51,12 @@ export const BeforeAfterSection = () => {
                 )}
               </div>
 
-              {/* Dynamic Grid: 2 cols if 2 images, 3 cols if 3 images */}
-              <div className={`w-full ${clinicalCase.images.length === 3 ? 'max-w-6xl' : 'max-w-5xl'} mx-auto grid grid-cols-1 ${clinicalCase.images.length === 3 ? 'md:grid-cols-3' : 'md:grid-cols-2'} gap-8 md:gap-8 lg:gap-12`}>
+              {/* Dynamic Grid: 2 cols if 2 images, 3 cols if 3 images, 5 cols if 5 images */}
+              <div className={`w-full mx-auto grid grid-cols-1 sm:grid-cols-2 ${
+                clinicalCase.images.length === 2 ? 'md:grid-cols-2 max-w-5xl' : 
+                clinicalCase.images.length === 3 ? 'md:grid-cols-3 max-w-6xl' : 
+                'md:grid-cols-3 lg:grid-cols-5 max-w-[100%] xl:max-w-[95rem]'
+              } gap-6 md:gap-8 lg:gap-8`}>
                 {clinicalCase.images.map((img, imgIdx) => (
                   <motion.div
                     key={imgIdx}

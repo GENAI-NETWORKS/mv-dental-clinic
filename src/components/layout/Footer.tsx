@@ -18,7 +18,10 @@ export const Footer = () => {
             <div className="bg-white/5 backdrop-blur-sm inline-block p-3 pr-6 rounded-2xl mb-6 border border-white/10 shadow-xl">
               <div className="flex items-center gap-4">
                 <img src={logo} alt="Mv Dental Clinic" className="h-14 w-auto object-contain rounded-xl" />
-                <span className="font-display font-black text-xl text-white tracking-tight">Mv Dental Clinic</span>
+                <div className="flex flex-col justify-center">
+                  <span className="font-display font-black text-xl text-white tracking-tight leading-none pb-1 border-b-[3px] border-[#3FA0E0] inline-block">Mv Dental Clinic</span>
+                  <span className="font-serif italic font-medium text-[13px] text-secondary tracking-wide pt-1">Vaisha Children's Dental Center</span>
+                </div>
               </div>
             </div>
             <p className="text-gray-300 text-sm leading-relaxed mb-8">
@@ -67,6 +70,7 @@ export const Footer = () => {
                 </div>
                 <div className="flex flex-col">
                   <a href="tel:8870185063" className="text-gray-300 hover:text-white transition-colors">88701 85063</a>
+                  <a href="tel:04273551686" className="text-gray-300 hover:text-white transition-colors">0427 3551686</a>
                   <a href="https://wa.me/918870185063?text=Hello!%20I%20would%20like%20to%20book%20an%20appointment." target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-[#25D366] transition-colors">WhatsApp Us</a>
                 </div>
               </li>

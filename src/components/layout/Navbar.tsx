@@ -46,7 +46,10 @@ export const Navbar = () => {
           {/* Logo */}
           <Link to="/" className="shrink-0 flex items-center gap-2 md:gap-3">
             <img src={logo} alt="Mv Dental Clinic" className="h-10 md:h-12 w-auto object-contain" />
-            <span className="font-display font-black text-lg sm:text-xl text-dark tracking-tight leading-tight">Mv Dental Clinic</span>
+            <div className="flex flex-col justify-center">
+              <span className="font-display font-black text-lg sm:text-xl text-dark tracking-tight leading-none pb-1 border-b-[3px] border-[#3FA0E0] inline-block">Mv Dental Clinic</span>
+              <span className="font-serif italic font-medium text-[11px] sm:text-[13px] text-secondary tracking-wide pt-1">Vaisha Children's Dental Center</span>
+            </div>
           </Link>
 
           {/* Right Side: Nav + CTA */}
