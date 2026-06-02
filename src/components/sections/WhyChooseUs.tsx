@@ -5,7 +5,7 @@ const features = [
   {
     icon: GraduationCap,
     title: 'Academic Excellence',
-    description: '20+ years as professor & clinician; post-graduate specialist.'
+    description: '20+ years as professor & clinician'
   },
   {
     icon: HeartPulse,

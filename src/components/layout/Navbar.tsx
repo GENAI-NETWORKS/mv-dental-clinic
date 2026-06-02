@@ -27,9 +27,9 @@ export const Navbar = () => {
 
   const navLinks = [
     { name: 'Home', path: '/' },
-    { name: 'About', path: '/#about' },
+    { name: 'About', path: '/about' },
     { name: 'Services', path: '/#services' },
-    { name: 'Gallery', path: '/#gallery' },
+    { name: 'Gallery', path: '/gallery' },
     { name: 'Contact', path: '/contact' },
   ];
 
@@ -55,17 +55,17 @@ export const Navbar = () => {
               <NavLink to="/" className={({ isActive }) => `px-4 py-2 text-[15px] font-bold rounded-full transition-all duration-300 ${isActive && location.hash === '' ? 'bg-primary text-white shadow-md shadow-primary/20' : 'text-text hover:bg-gray-100/80 hover:text-primary'}`}>
                 Home
               </NavLink>
-              <Link to="/#about" className={`px-4 py-2 text-[15px] font-bold rounded-full transition-all duration-300 ${location.hash === '#about' ? 'bg-primary text-white shadow-md shadow-primary/20' : 'text-text hover:bg-gray-100/80 hover:text-primary'}`}>
+              <NavLink to="/about" className={({ isActive }) => `px-4 py-2 text-[15px] font-bold rounded-full transition-all duration-300 ${isActive ? 'bg-primary text-white shadow-md shadow-primary/20' : 'text-text hover:bg-gray-100/80 hover:text-primary'}`}>
                 About
-              </Link>
+              </NavLink>
               
               <Link to="/#services" className={`px-4 py-2 text-[15px] font-bold rounded-full transition-all duration-300 ${location.hash === '#services' ? 'bg-primary text-white shadow-md shadow-primary/20' : 'text-text hover:bg-gray-100/80 hover:text-primary'}`}>
                 Services
               </Link>
 
-              <Link to="/#gallery" className={`px-4 py-2 text-[15px] font-bold rounded-full transition-all duration-300 ${location.hash === '#gallery' ? 'bg-primary text-white shadow-md shadow-primary/20' : 'text-text hover:bg-gray-100/80 hover:text-primary'}`}>
+              <NavLink to="/gallery" className={({ isActive }) => `px-4 py-2 text-[15px] font-bold rounded-full transition-all duration-300 ${isActive ? 'bg-primary text-white shadow-md shadow-primary/20' : 'text-text hover:bg-gray-100/80 hover:text-primary'}`}>
                 Gallery
-              </Link>
+              </NavLink>
               <NavLink to="/contact" className={({ isActive }) => `px-4 py-2 text-[15px] font-bold rounded-full transition-all duration-300 ${isActive ? 'bg-primary text-white shadow-md shadow-primary/20' : 'text-text hover:bg-gray-100/80 hover:text-primary'}`}>
                 Contact
               </NavLink>

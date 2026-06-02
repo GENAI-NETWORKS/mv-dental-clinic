@@ -3,9 +3,12 @@ import blogImg1 from '../../assets/WhatsApp Image 2026-06-02 at 9.11.57 AM.jpeg'
 import blogImg2 from '../../assets/WhatsApp Image 2026-06-02 at 9.11.58 AM (1).jpeg';
 import blogImg3 from '../../assets/WhatsApp Image 2026-06-02 at 9.11.58 AM (2).jpeg';
 import blogImg4 from '../../assets/WhatsApp Image 2026-06-02 at 9.11.58 AM.jpeg';
+import blogImg5 from '../../assets/WhatsApp Image 2026-06-02 at 11.02.06 AM.jpeg';
+import blogImg6 from '../../assets/WhatsApp Image 2026-06-02 at 11.02.06 AM (1).jpeg';
+import blogImg7 from '../../assets/image copy 6.png';
 
 const blogImages = [
-  blogImg1, blogImg2, blogImg3, blogImg4
+  blogImg1, blogImg2, blogImg3, blogImg4, blogImg5, blogImg6, blogImg7
 ];
 
 export const PatientTreatmentBlog = () => {
