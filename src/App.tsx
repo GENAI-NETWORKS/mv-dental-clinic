@@ -10,6 +10,7 @@ import { PediatricServices } from './pages/PediatricServices';
 import { GeneralServices } from './pages/GeneralServices';
 import { Gallery } from './pages/Gallery';
 import { Contact } from './pages/Contact';
+import { News } from './pages/News';
 
 import { HelmetProvider } from 'react-helmet-async';
 
@@ -27,6 +28,7 @@ function App() {
               <Route path="/services/pediatric" element={<PediatricServices />} />
               <Route path="/services/general" element={<GeneralServices />} />
               <Route path="/gallery" element={<Gallery />} />
+              <Route path="/news" element={<News />} />
               <Route path="/contact" element={<Contact />} />
             </Routes>
           </main>

@@ -14,7 +14,7 @@ export const About = () => {
       />
       
       {/* Premium Dark Hero Header */}
-      <div className="relative pt-32 pb-24 lg:pt-48 lg:pb-32 overflow-hidden flex flex-col items-center justify-center min-h-[40vh]">
+      <div className="relative pt-32 pb-16 lg:pt-40 lg:pb-20 overflow-hidden flex flex-col items-center justify-center">
         {/* Background Image & Overlay */}
         <div className="absolute inset-0 z-0">
           <img 

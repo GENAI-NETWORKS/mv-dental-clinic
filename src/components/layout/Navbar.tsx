@@ -29,7 +29,8 @@ export const Navbar = () => {
     { name: 'Home', path: '/' },
     { name: 'About', path: '/about' },
     { name: 'Services', path: '/#services' },
-    { name: 'Gallery', path: '/gallery' },
+    { name: 'Treatment Blogs', path: '/gallery' },
+    { name: 'News & Events', path: '/news' },
     { name: 'Contact', path: '/contact' },
   ];
 
@@ -64,7 +65,10 @@ export const Navbar = () => {
               </Link>
 
               <NavLink to="/gallery" className={({ isActive }) => `px-4 py-2 text-[15px] font-bold rounded-full transition-all duration-300 ${isActive ? 'bg-primary text-white shadow-md shadow-primary/20' : 'text-text hover:bg-gray-100/80 hover:text-primary'}`}>
-                Gallery
+                Treatment Blogs
+              </NavLink>
+              <NavLink to="/news" className={({ isActive }) => `px-4 py-2 text-[15px] font-bold rounded-full transition-all duration-300 ${isActive ? 'bg-primary text-white shadow-md shadow-primary/20' : 'text-text hover:bg-gray-100/80 hover:text-primary'}`}>
+                News & Events
               </NavLink>
               <NavLink to="/contact" className={({ isActive }) => `px-4 py-2 text-[15px] font-bold rounded-full transition-all duration-300 ${isActive ? 'bg-primary text-white shadow-md shadow-primary/20' : 'text-text hover:bg-gray-100/80 hover:text-primary'}`}>
                 Contact

@@ -18,9 +18,6 @@ export const GallerySection = () => {
               Our Clinic Environment
             </h3>
           </div>
-          <Link to="/gallery">
-            <Button variant="outline">View Full Gallery</Button>
-          </Link>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-stretch pb-12">
@@ -31,11 +28,14 @@ export const GallerySection = () => {
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              className="order-1 md:order-none rounded-[2rem] overflow-hidden shadow-xl border-8 border-white h-fit relative group cursor-pointer bg-white"
+              className="order-1 md:order-none rounded-[2rem] shadow-xl border-8 border-white h-fit relative group cursor-pointer bg-white"
             >
-              <img src={img1} alt="Awards & Recognition" className="w-full h-auto object-cover transform group-hover:scale-105 transition-transform duration-700" />
-              <div className="absolute inset-0 bg-gradient-to-t from-dark/90 via-dark/20 to-transparent flex items-end justify-center pb-8">
-                <span className="bg-white text-dark font-black tracking-wide shadow-lg px-6 py-2 rounded-full">Awards & Recognition</span>
+              <div className="relative overflow-hidden rounded-[1.25rem] w-full h-full">
+                <img src={img1} alt="Awards & Recognition" className="w-full h-auto object-cover transform group-hover:scale-105 transition-transform duration-700" />
+                <div className="absolute inset-0 bg-gradient-to-t from-dark/40 via-transparent to-transparent pointer-events-none"></div>
+              </div>
+              <div className="absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-1/2 z-10 w-full flex justify-center px-4">
+                <span className="bg-white text-dark font-black tracking-wide shadow-xl px-6 py-2 rounded-full whitespace-nowrap border border-gray-100">Awards & Recognition</span>
               </div>
             </motion.div>
           </div>
@@ -47,11 +47,14 @@ export const GallerySection = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: 0.1 }}
-              className="order-2 md:order-none rounded-[2rem] overflow-hidden shadow-xl border-8 border-white h-fit relative group cursor-pointer bg-white shrink-0"
+              className="order-2 md:order-none rounded-[2rem] shadow-xl border-8 border-white h-fit relative group cursor-pointer bg-white shrink-0"
             >
-              <img src={img2} alt="Reception Desk" className="w-full h-auto object-cover transform group-hover:scale-105 transition-transform duration-700" />
-              <div className="absolute inset-0 bg-gradient-to-t from-dark/90 via-dark/20 to-transparent flex items-end justify-center pb-8">
-                <span className="bg-white text-dark font-black tracking-wide shadow-lg px-6 py-2 rounded-full">Reception Desk</span>
+              <div className="relative overflow-hidden rounded-[1.25rem] w-full h-full">
+                <img src={img2} alt="Reception Desk" className="w-full h-auto object-cover transform group-hover:scale-105 transition-transform duration-700" />
+                <div className="absolute inset-0 bg-gradient-to-t from-dark/40 via-transparent to-transparent pointer-events-none"></div>
+              </div>
+              <div className="absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-1/2 z-10 w-full flex justify-center px-4">
+                <span className="bg-white text-dark font-black tracking-wide shadow-xl px-6 py-2 rounded-full whitespace-nowrap border border-gray-100">Reception Desk</span>
               </div>
             </motion.div>
             <motion.div
@@ -59,11 +62,14 @@ export const GallerySection = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: 0.2 }}
-              className="order-4 md:order-none rounded-[2rem] overflow-hidden shadow-xl border-8 border-white h-full relative group cursor-pointer bg-white"
+              className="order-4 md:order-none rounded-[2rem] shadow-xl border-8 border-white h-full relative group cursor-pointer bg-white mt-4 md:mt-0"
             >
-              <img src={img4} alt="Treatment Area" className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700" />
-              <div className="absolute inset-0 bg-gradient-to-t from-dark/90 via-dark/20 to-transparent flex items-end justify-center pb-8">
-                <span className="bg-white text-dark font-black tracking-wide shadow-lg px-6 py-2 rounded-full">Treatment Area</span>
+              <div className="relative overflow-hidden rounded-[1.25rem] w-full h-full">
+                <img src={img4} alt="Treatment Area" className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700" />
+                <div className="absolute inset-0 bg-gradient-to-t from-dark/40 via-transparent to-transparent pointer-events-none"></div>
+              </div>
+              <div className="absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-1/2 z-10 w-full flex justify-center px-4">
+                <span className="bg-white text-dark font-black tracking-wide shadow-xl px-6 py-2 rounded-full whitespace-nowrap border border-gray-100">Treatment Area</span>
               </div>
             </motion.div>
           </div>
@@ -75,11 +81,14 @@ export const GallerySection = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: 0.2 }}
-              className="order-3 md:order-none rounded-[2rem] overflow-hidden shadow-xl border-8 border-white h-fit relative group cursor-pointer bg-white shrink-0"
+              className="order-3 md:order-none rounded-[2rem] shadow-xl border-8 border-white h-fit relative group cursor-pointer bg-white shrink-0 mb-4 md:mb-0"
             >
-              <img src={img3} alt="Location Map" className="w-full h-auto object-cover transform group-hover:scale-105 transition-transform duration-700" />
-              <div className="absolute inset-0 bg-gradient-to-t from-dark/90 via-dark/20 to-transparent flex items-end justify-center pb-8">
-                <span className="bg-white text-dark font-black tracking-wide shadow-lg px-6 py-2 rounded-full">Location Map</span>
+              <div className="relative overflow-hidden rounded-[1.25rem] w-full h-full">
+                <img src={img3} alt="Location Map" className="w-full h-auto object-cover transform group-hover:scale-105 transition-transform duration-700" />
+                <div className="absolute inset-0 bg-gradient-to-t from-dark/40 via-transparent to-transparent pointer-events-none"></div>
+              </div>
+              <div className="absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-1/2 z-10 w-full flex justify-center px-4">
+                <span className="bg-white text-dark font-black tracking-wide shadow-xl px-6 py-2 rounded-full whitespace-nowrap border border-gray-100">Location Map</span>
               </div>
             </motion.div>
             <motion.div 

@@ -32,7 +32,8 @@ export const Footer = () => {
             <ul className="space-y-4 text-sm font-medium">
               <li><Link to="/" className="text-gray-400 hover:text-white flex items-center group transition-colors"><ChevronRight className="w-4 h-4 mr-2 text-primary opacity-0 -ml-6 group-hover:opacity-100 group-hover:ml-0 transition-all duration-300" />Home</Link></li>
               <li><Link to="/about" className="text-gray-400 hover:text-white flex items-center group transition-colors"><ChevronRight className="w-4 h-4 mr-2 text-primary opacity-0 -ml-6 group-hover:opacity-100 group-hover:ml-0 transition-all duration-300" />About Us</Link></li>
-              <li><Link to="/gallery" className="text-gray-400 hover:text-white flex items-center group transition-colors"><ChevronRight className="w-4 h-4 mr-2 text-primary opacity-0 -ml-6 group-hover:opacity-100 group-hover:ml-0 transition-all duration-300" />Gallery</Link></li>
+              <li><Link to="/gallery" className="text-gray-400 hover:text-white flex items-center group transition-colors"><ChevronRight className="w-4 h-4 mr-2 text-primary opacity-0 -ml-6 group-hover:opacity-100 group-hover:ml-0 transition-all duration-300" />Treatment Blogs</Link></li>
+              <li><Link to="/news" className="text-gray-400 hover:text-white flex items-center group transition-colors"><ChevronRight className="w-4 h-4 mr-2 text-primary opacity-0 -ml-6 group-hover:opacity-100 group-hover:ml-0 transition-all duration-300" />News & Events</Link></li>
               <li><Link to="/contact" className="text-gray-400 hover:text-white flex items-center group transition-colors"><ChevronRight className="w-4 h-4 mr-2 text-primary opacity-0 -ml-6 group-hover:opacity-100 group-hover:ml-0 transition-all duration-300" />Contact</Link></li>
             </ul>
           </div>

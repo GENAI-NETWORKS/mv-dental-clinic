@@ -1,4 +1,7 @@
 import { motion } from 'framer-motion';
+import { Link } from 'react-router-dom';
+import { ArrowRight } from 'lucide-react';
+import { Button } from '../ui/Button';
 import blogImg1 from '../../assets/WhatsApp Image 2026-06-02 at 9.11.57 AM.jpeg';
 import blogImg2 from '../../assets/WhatsApp Image 2026-06-02 at 9.11.58 AM (1).jpeg';
 import blogImg3 from '../../assets/WhatsApp Image 2026-06-02 at 9.11.58 AM (2).jpeg';
@@ -21,6 +24,14 @@ export const PatientTreatmentBlog = () => {
           <p className="text-muted max-w-2xl mx-auto mt-4">
             Browse through some of our recent successful patient treatments and smile transformations.
           </p>
+          <div className="mt-8">
+            <Link to="/gallery">
+              <Button variant="primary" className="shadow-lg shadow-primary/20 group inline-flex items-center">
+                Show More
+                <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
+              </Button>
+            </Link>
+          </div>
         </div>
       </div>
       

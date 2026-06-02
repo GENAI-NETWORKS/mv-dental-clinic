@@ -12,7 +12,7 @@ export const Contact = () => {
       <div className="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden flex flex-col items-center justify-center min-h-[40vh]">
         <div className="absolute inset-0 z-0">
           <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80" alt="Contact Us" className="w-full h-full object-cover" />
-          <div className="absolute inset-0 bg-dark/85 backdrop-blur-sm"></div>
+          <div className="absolute inset-0 bg-dark/60 backdrop-blur-sm"></div>
           <div className="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-primary/30 to-transparent"></div>
         </div>
         <div className="container mx-auto px-4 text-center relative z-10">
