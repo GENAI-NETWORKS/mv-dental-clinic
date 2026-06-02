@@ -70,8 +70,8 @@ export const Gallery = () => {
               className="break-inside-avoid relative rounded-3xl overflow-hidden shadow-xl border-[6px] border-white group cursor-pointer"
             >
               <img src={img.src} alt={img.alt} className="w-full h-auto object-cover transform group-hover:scale-105 transition-transform duration-700" />
-              <div className="absolute inset-0 bg-gradient-to-t from-dark/80 via-dark/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-center pb-6">
-                <span className="text-white font-bold tracking-wide shadow-sm translate-y-4 group-hover:translate-y-0 transition-transform duration-300">{img.category}</span>
+              <div className="absolute inset-0 bg-gradient-to-t from-dark/80 via-dark/20 to-transparent flex items-end justify-center pb-6">
+                <span className="text-white font-bold tracking-wide shadow-sm">{img.category}</span>
               </div>
             </motion.div>
           ))}

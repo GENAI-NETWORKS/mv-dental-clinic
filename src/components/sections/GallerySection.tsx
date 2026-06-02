@@ -34,8 +34,8 @@ export const GallerySection = () => {
               className="order-1 md:order-none rounded-[2rem] overflow-hidden shadow-xl border-8 border-white h-fit relative group cursor-pointer bg-white"
             >
               <img src={img1} alt="Awards & Recognition" className="w-full h-auto object-cover transform group-hover:scale-105 transition-transform duration-700" />
-              <div className="absolute inset-0 bg-gradient-to-t from-dark/90 via-dark/20 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-500 flex items-end justify-center pb-8">
-                <span className="bg-white text-dark font-black tracking-wide shadow-lg px-6 py-2 rounded-full translate-y-8 group-hover:translate-y-0 transition-transform duration-500">Awards & Recognition</span>
+              <div className="absolute inset-0 bg-gradient-to-t from-dark/90 via-dark/20 to-transparent flex items-end justify-center pb-8">
+                <span className="bg-white text-dark font-black tracking-wide shadow-lg px-6 py-2 rounded-full">Awards & Recognition</span>
               </div>
             </motion.div>
           </div>
@@ -50,8 +50,8 @@ export const GallerySection = () => {
               className="order-2 md:order-none rounded-[2rem] overflow-hidden shadow-xl border-8 border-white h-fit relative group cursor-pointer bg-white shrink-0"
             >
               <img src={img2} alt="Reception Desk" className="w-full h-auto object-cover transform group-hover:scale-105 transition-transform duration-700" />
-              <div className="absolute inset-0 bg-gradient-to-t from-dark/90 via-dark/20 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-500 flex items-end justify-center pb-8">
-                <span className="bg-white text-dark font-black tracking-wide shadow-lg px-6 py-2 rounded-full translate-y-8 group-hover:translate-y-0 transition-transform duration-500">Reception Desk</span>
+              <div className="absolute inset-0 bg-gradient-to-t from-dark/90 via-dark/20 to-transparent flex items-end justify-center pb-8">
+                <span className="bg-white text-dark font-black tracking-wide shadow-lg px-6 py-2 rounded-full">Reception Desk</span>
               </div>
             </motion.div>
             <motion.div
@@ -62,8 +62,8 @@ export const GallerySection = () => {
               className="order-4 md:order-none rounded-[2rem] overflow-hidden shadow-xl border-8 border-white h-full relative group cursor-pointer bg-white"
             >
               <img src={img4} alt="Treatment Area" className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700" />
-              <div className="absolute inset-0 bg-gradient-to-t from-dark/90 via-dark/20 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-500 flex items-end justify-center pb-8">
-                <span className="bg-white text-dark font-black tracking-wide shadow-lg px-6 py-2 rounded-full translate-y-8 group-hover:translate-y-0 transition-transform duration-500">Treatment Area</span>
+              <div className="absolute inset-0 bg-gradient-to-t from-dark/90 via-dark/20 to-transparent flex items-end justify-center pb-8">
+                <span className="bg-white text-dark font-black tracking-wide shadow-lg px-6 py-2 rounded-full">Treatment Area</span>
               </div>
             </motion.div>
           </div>
@@ -78,8 +78,8 @@ export const GallerySection = () => {
               className="order-3 md:order-none rounded-[2rem] overflow-hidden shadow-xl border-8 border-white h-fit relative group cursor-pointer bg-white shrink-0"
             >
               <img src={img3} alt="Location Map" className="w-full h-auto object-cover transform group-hover:scale-105 transition-transform duration-700" />
-              <div className="absolute inset-0 bg-gradient-to-t from-dark/90 via-dark/20 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-500 flex items-end justify-center pb-8">
-                <span className="bg-white text-dark font-black tracking-wide shadow-lg px-6 py-2 rounded-full translate-y-8 group-hover:translate-y-0 transition-transform duration-500">Location Map</span>
+              <div className="absolute inset-0 bg-gradient-to-t from-dark/90 via-dark/20 to-transparent flex items-end justify-center pb-8">
+                <span className="bg-white text-dark font-black tracking-wide shadow-lg px-6 py-2 rounded-full">Location Map</span>
               </div>
             </motion.div>
             <motion.div 
