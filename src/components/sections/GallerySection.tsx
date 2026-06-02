@@ -4,6 +4,7 @@ import { Button } from '../ui/Button';
 import img1 from '../../assets/IMG_20260530_200224 (1).jpg';
 import img2 from '../../assets/IMG_20260530_200434 (1).jpg';
 import img3 from '../../assets/IMG_20260531_143156.jpg';
+import img4 from '../../assets/image copy 4.png';
 
 export const GallerySection = () => {
   return (
@@ -53,17 +54,17 @@ export const GallerySection = () => {
                 <span className="bg-white text-dark font-black tracking-wide shadow-lg px-6 py-2 rounded-full translate-y-8 group-hover:translate-y-0 transition-transform duration-500">Reception Desk</span>
               </div>
             </motion.div>
-            <motion.div 
+            <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: 0.2 }}
-              className="order-4 md:order-none bg-primary/5 rounded-[2rem] p-8 flex-1 flex flex-col justify-center border border-primary/10 shadow-inner"
+              className="order-4 md:order-none rounded-[2rem] overflow-hidden shadow-xl border-8 border-white h-full relative group cursor-pointer bg-white"
             >
-              <h4 className="text-xl font-bold text-primary mb-3">Modern & Comforting</h4>
-              <p className="text-dark/80 font-medium leading-relaxed">
-                Designed to alleviate dental anxiety, our reception and treatment areas offer a welcoming, child-friendly atmosphere equipped with the latest technology.
-              </p>
+              <img src={img4} alt="Treatment Area" className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700" />
+              <div className="absolute inset-0 bg-gradient-to-t from-dark/90 via-dark/20 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-500 flex items-end justify-center pb-8">
+                <span className="bg-white text-dark font-black tracking-wide shadow-lg px-6 py-2 rounded-full translate-y-8 group-hover:translate-y-0 transition-transform duration-500">Treatment Area</span>
+              </div>
             </motion.div>
           </div>
 

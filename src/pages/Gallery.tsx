@@ -1,17 +1,25 @@
 import { motion } from 'framer-motion';
 import { SEO } from '../components/seo/SEO';
+import { BeforeAfterSection } from '../components/sections/BeforeAfterSection';
 import img1 from '../assets/IMG_20260530_200224 (1).jpg';
 import img2 from '../assets/IMG_20260530_200434 (1).jpg';
 import img3 from '../assets/IMG_20260531_143156.jpg';
 import img4 from '../assets/IMG-20260531-WA0084 (1).jpg';
 import img5 from '../assets/IMG-20260531-WA0095 (1).jpg';
-
+import img6 from '../assets/MR.SRINIVASAN 39 YRS 02_page-0001.jpg';
+import img7 from '../assets/MR.SRINIVASAN 40Y M OPG IMAGE 2_page-0001.jpg';
+import img8 from '../assets/image copy 5.png';
+import img9 from '../assets/image copy 4.png';
 const images = [
   { src: img1, alt: 'Awards & Recognition', category: 'Awards & Recognition' },
   { src: img2, alt: 'Reception Desk', category: 'Reception' },
   { src: img3, alt: 'Location Map', category: 'Location Map' },
   { src: img4, alt: 'Clinic Exterior', category: 'Clinic Entrance' },
   { src: img5, alt: 'Pediatric Dental Care', category: 'Patient Care' },
+  { src: img6, alt: 'After placement of three implants', category: 'After placement of three implants' },
+  { src: img7, alt: 'After final fixed Prosthesis', category: 'After final fixed Prosthesis' },
+  { src: img8, alt: 'Post treatment anterior teeth', category: 'Post treatment anterior teeth' },
+  { src: img9, alt: 'Treatment Area', category: 'Treatment Area' },
 ];
 
 export const Gallery = () => {
@@ -21,7 +29,7 @@ export const Gallery = () => {
         title="Clinic Gallery | MV Dental Clinic"
         description="Take a visual tour of MV Dental Clinic in Salem. View our state-of-the-art facilities, modern dental equipment, and comforting pediatric areas."
       />
-      <div className="relative pt-32 pb-20 lg:pt-48 lg:pb-32 mb-16 overflow-hidden flex flex-col items-center justify-center min-h-[40vh]">
+      <div className="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden flex flex-col items-center justify-center min-h-[40vh]">
         <div className="absolute inset-0 z-0">
           <img src="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80" alt="Clinic Gallery" className="w-full h-full object-cover" />
           <div className="absolute inset-0 bg-primary/85 backdrop-blur-sm"></div>
@@ -46,6 +54,10 @@ export const Gallery = () => {
         </div>
       </div>
 
+      <div className="mb-20">
+        <BeforeAfterSection />
+      </div>
+
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="columns-1 md:columns-2 lg:columns-3 gap-6 space-y-6">
           {images.map((img, idx) => (
@@ -65,6 +77,8 @@ export const Gallery = () => {
           ))}
         </div>
       </div>
+
+
     </div>
   );
 };
